@@ -7,7 +7,9 @@ namespace FlatDataTableDashboard
 {
     public partial class MainWindow : Window
     {
+        // Список всех работников
         private readonly ObservableCollection<Member> _members = new();
+        // Поле, сообщающее о состоянии экрана (максимизировано/минимизировано)
         private bool _isMaximized = false;
 
         public MainWindow()
@@ -19,6 +21,7 @@ namespace FlatDataTableDashboard
             LoadDataInDataGrid();
         }
 
+        // Метод реализующий возможность перемещения окна приложения по экрану
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.ChangedButton == MouseButton.Left)
@@ -27,6 +30,7 @@ namespace FlatDataTableDashboard
             }
         }
 
+        // Метод, добавляющий возможность развернуть приложения на весь экран двойным щелчком левой клавишей мыши
         private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             if (e.ClickCount == 2)
@@ -48,6 +52,7 @@ namespace FlatDataTableDashboard
             }
         }
 
+        // Метод, загружающий данные в DataGrid
         private void LoadDataInDataGrid()
         {
             var converter = new BrushConverter();
@@ -87,6 +92,7 @@ namespace FlatDataTableDashboard
             _members.Add(new Member { Number = 30, Character = "S", BgColor = (Brush)converter.ConvertFromString("#0ca678")!, Name = "Saeed Dasman", Position = "Coach", Email = "saeed.dasi@hotmail.com", Phone = "817-320-5052" });
         }
 
+        // Событие нажатия на кнопку выхода, закрывающее приложение
         private void LogoutButton_Click(object sender, RoutedEventArgs e) => Close();
     }
 }

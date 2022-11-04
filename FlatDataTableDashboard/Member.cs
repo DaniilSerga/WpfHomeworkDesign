@@ -4,12 +4,19 @@ namespace FlatDataTableDashboard
 {
     public class Member
     {
-        public string Character { get; set; }
+        // Символ, необходимый для иконки работника
+        public string? Character { get; set; }
+        // ID работника
         public int Number { get; set; }
-        public string Name { get; set; }
-        public string Position { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
-        public Brush BgColor { get; set; }
+        // ФИО работника
+        public string? Name { get; set; }
+        // Должность работника
+        public string? Position { get; set; }
+        // Адрес электронной почты работника
+        public string? Email { get; set; }
+        // Номер мобильного телефона работника
+        public string? Phone { get; set; }
+        // Цвет иконки работника
+        public Brush? BgColor { get; set; }
     }
 }
