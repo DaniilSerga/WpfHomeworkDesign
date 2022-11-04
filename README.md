@@ -12,11 +12,9 @@ ___
 ![image](https://user-images.githubusercontent.com/87036978/199944014-2a1b8dbb-9e1c-4c8a-8bf8-a5ee3149a28f.png)
 *Дизайн приложения*
 
-___
 ## :books: Использованные ресурсы:
 - [How to Design Flat Data Table Dashboard in WPF](https://www.youtube.com/watch?v=mlmyFXJy8gQ&t=722s)
 - [MahApps.MetroIconPacks](https://github.com/MahApps/MahApps.Metro.IconPacks)
 
-___
 ## :bookmark_tabs: Совместимость версий
 Приложение было разработано в среде *Visual Studio 2022*, на версии *.NET 6.0*.
